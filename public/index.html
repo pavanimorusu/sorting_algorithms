@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorting Algorithm Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Sorting Algorithm Visualizer</h1>
+
+<div class="controls">
+    <input id="input" type="text" placeholder="Enter numbers (e.g. 20 30 50 10 40)">
+    
+    <select id="algo">
+        <option value="bubble">Bubble Sort</option>
+        <option value="selection">Selection Sort</option>
+        <option value="insertion">Insertion Sort</option>
+        <option value="quick">Quick Sort</option>
+        <option value="merge">Merge Sort</option>
+        <option value="heap">Heap Sort</option>
+    </select>
+
+    <button onclick="startSort()">Visualize</button>
+</div>
+
+<div id="bars" class="bars-container"></div>
+
+<div id="output" class="output"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
